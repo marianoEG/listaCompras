@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiLista</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <!-- ICONO -->
+    <link rel="icon" href="images/icono.jpg">
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>MiLista</h1></a>
+    </header>
+    <section>
+        <ul id="lista">
+            <h1 id="listaVacia">La lista esta vacia :(</h1>
+        </ul>
+        <div id="agregar">
+            <div class="tituloIcono">
+                <input type="text" id="titulo" placeholder=" Nombre" required>
+                <div id="icono">
+                    <select id="tipoProducto" required>
+                        <option selected disabled id="catego">Categoria</option>
+                        <option value="images/almacen.svg">Almacen</option>
+                        <option value="images/bebidas.svg">Bebidas</option>
+                        <option value="images/carnes.svg">Carnes</option>
+                        <option value="images/desayuno.svg">Desayuno</option>
+                        <option value="images/frescos.svg">Productos frescos</option>
+                        <option value="images/frutasVerduras.svg">Frutas y Verduras</option>
+                        <option value="images/limpieza.svg">Limpieza</option>
+                        <option value="images/perfumeria.svg">Perfumeria</option>
+                    </select>
+                </div>
+            </div>
+            <div class="descripcion">
+                <textarea name="desc" id="descripcion" cols="30" rows="10" placeholder=" Descripcion"></textarea>
+            </div>
+            <div class="botonAgregarFinal">
+                <button id="botonAgregarFinal">Añadir</button>
+            </div>
+        </div>
+        <button id="botonaco">+</button>
+        
+    </section>
+
+    <!-- JavaScript -->
+    <script src="javascript/script.js"></script>
+</body>
+</html>
